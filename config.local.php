@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /* Local Configuration Options */
-$config["base_url"] = 'http://localhost/touch/';
+$config["base_url"] = 'http://localhost/mds-touch/';
 $config["index_page"] = "";
 $config["uri_protocol"] = "AUTO";
 $config["email_protocol"] = "sendmail";

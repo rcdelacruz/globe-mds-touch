@@ -1,4 +1,5 @@
 FOR LOCAL USE
 
---copy config.local.php to application/config/
+--EDIT config.local.php to your local settings
+--COPY config.local.php to application/config/
 
