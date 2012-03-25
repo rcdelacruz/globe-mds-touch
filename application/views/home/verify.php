@@ -1,0 +1,34 @@
+<div data-role="page" id="front-page" data-theme="a">
+	<div data-role="header" data-theme="f" class="front-page-down">
+		<div class="float-logo"></div>
+			<div id="header-up">
+				<div></div><!--  class="enjoy" -->
+			</div>
+			<div id="header">
+				<div class="logo">
+					<a href="<?php echo base_url();?>home/menu" class="menuBtnRight  ui-btn-right">Menu</a>
+				</div>
+			</div>
+	</div>
+	<div data-role="content">
+		<div class="search">
+			<input type="search" name="search" id="searc-basic" value="" placeholder="Search" data-theme="c"/>
+		</div>
+		<?php if($error) : ?>
+		    <div class="message-container" data-collapsed="false" data-role="collapsible" data-theme="e">
+		       <?php print $error ?>
+		    </div>
+		<?php endif ?>
+		<div style="margin-bottom: 50px;"></div>
+		<form method="post" action="<?php echo base_url()?>home/verify">
+			<fieldset>
+				<div id="indent">
+					<label for="mobtel">Enter verification number:</label>
+				</div>
+					<input data-theme="b" id="verification_code" type="text" name="verification_code" placeholder="verification number..."/>
+					<input type="submit" value="Submit"/>
+			</fieldset>
+		</form>
+	</div>
+
+</div>

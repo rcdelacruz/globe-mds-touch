@@ -1,0 +1,527 @@
+@CHARSET "utf-8";
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	height: 100%;
+	background-image: url("../img/background.gif");
+}
+
+body {
+	height: 100%;
+	font-family: Century Gothic, Avant Garde, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #34414A;
+}
+
+a {
+	color: #0066CC;
+	border: none;
+}
+
+a:visited {
+	color: #9CC6F1
+}
+
+a:hover {
+	text-decoration:  none;
+}
+
+a.black {
+	color: #34414A;
+	text-decoration: none;
+}
+
+a.black:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border: none;
+}
+
+.small {
+	font-size: 8pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+h1 {
+	color: #0066CC;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+h3 {
+	color: #0066CC;
+	font-weight: normal;
+	font-size: 13pt;
+}
+
+h2, h4, h5 {
+	color: #0066CC;
+	font-weight: bold;
+	font-size: 12pt;	
+}
+
+p {
+	margin-bottom: 10px;
+	line-height: 25px;
+	text-align: left;
+	text-align: justify;
+}
+
+table.data {
+	text-align: left;
+}
+table.data th {
+	font-weight: bold;
+	text-align: left;
+	border-bottom: dotted 1px black;
+	padding: 5px;
+}
+
+table.data td {
+	font-weight: normal;
+	border-bottom: dotted 1px black;
+	padding: 5px;
+}
+
+table.data tbody tr.link:hover {
+	background-color: #d9e5f0;
+	cursor: pointer;
+}
+
+/******************** LAYOUT ********************/
+table#container {
+	width: 100%;
+	height: 100%;
+}
+
+td.center {
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#main {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width:990px;	
+}
+
+/********************** TOP/NAVIGATION *************************/
+div#top {
+	height: 55px;
+	text-align: left;
+}
+
+div#nav {
+	margin-left: 5px;
+	margin-top: 36px;
+	float: left;
+	height: 19px;
+}
+
+div#nav .ul1 {
+	list-style-type: none;
+}
+
+div#nav .li1 {
+	position: relative;
+	list-style-type: none;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10pt;
+	margin-left: 0px;
+	line-height: normal;
+}
+
+div#nav .ul2 {
+	position:absolute;
+	left: -10px;
+	list-style-type: none;
+	display: none;
+}
+
+div#nav .li2 {
+	padding-bottom: 5px;
+	list-style-type: none;
+	text-transform: none;
+	font-size: 9pt;
+	padding-left: 10px;
+	padding-right: 10px;
+	white-space: nowrap;
+	border-bottom: dotted 1px #ababab;
+	margin-left: 0px;
+	line-height: normal;
+}
+
+div#nav .transparent {
+ 	padding-top: 9px;
+ 	background-image: url(../img/transparent.gif);	
+}
+
+div#nav .white {
+	padding-top: 5px;
+	background-color: white;
+}
+
+div#nav li:hover ul , li.over ul{ /* lists nested under hovered list items */
+	display: block;
+}
+
+div#nav li a {
+	display: block;
+	color: #34414A;
+	text-decoration: none;
+}
+
+div#nav li a.current {
+	display: block;
+	color: #0066CC;
+	text-decoration: none;
+}
+
+div#nav li a:hover {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+/********************** CONTENT *************************/
+div#content {
+	clear: both;
+	background-color:#fff;
+	border: 1px solid #cecece;
+	text-align: left;
+	padding: 15px;
+	min-height: 580px;
+}
+
+div#left {
+	float: left;
+	width: 748px;
+}
+div#right {
+	float: right;
+	width: 195px;
+}
+
+div.teaser {
+	margin-top: 15px;
+	text-align: left;
+}
+
+div.teaser h1 {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #0066CC;
+}
+
+div.teaser h1 a {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+div.teaser h2 {
+	font-size: 8pt;
+	font-weight: normal;
+	color: #888888;
+}
+
+div.teaser h2 a {
+	color: #888888;
+	text-decoration: none;
+}
+
+div.teaser h2 strong {
+	font-weight: normal;
+}
+
+div.teaser h2 a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+div.contentarea {
+	width: 748px;
+}
+
+div.stagenav {
+	margin-top: 30px;
+	height: 360px;
+}
+
+div.stagenav p {
+	text-align: center;
+	line-height: normal;
+	margin-bottom: 0px;
+}
+
+p.bold {
+	font-weight: bold;
+}
+
+.red {
+	color: #d60000;
+}
+
+.green {
+	color: #30ba00;
+}
+
+div.contentarea h3 {
+	font-size: 14pt;
+	font-weight: normal;
+	color: #0066CC;
+	text-align: left;
+	margin-bottom: 3px;
+}
+
+
+/***************************** FOOTER ****************************/
+div#footerleft {
+	font-size: 8pt;
+	float: left;
+	text-align: left;
+}
+
+div#footerright {
+	font-size: 8pt;
+	float: right;
+	text-align: right;
+}
+
+div#footerright a {
+	color: black;
+	text-decoration: none;
+}
+
+div#footerright a:hover {
+	text-decoration: underline;
+}
+
+/*************************** CONTENT ELEMENTS ********************/
+div.imagegallery {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+div.thumbnailcontainer {
+	clear: both;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+ul.thumbnails {
+	float: left;
+	position: relative;
+	left: 50%;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul.thumbnails li {
+	float: left;
+	position: relative;
+	right: 50%;
+	list-style-type: none;
+}
+
+ul.thumbnails li img {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+div.textcolumn {
+	margin-top: 15px;
+	float: left;
+	width: 300px;
+}
+
+ol li, ul li, ul.facts li {
+	margin-left: 25px;
+	line-height: 25px;
+	text-align: left;
+}
+
+ul.facts li h2 {
+	font-size: 13px;
+	color: #34414A;
+}
+
+ul.horiziontal {
+	list-style-type: none;	
+}
+ul.horizontal li {
+	float: left; 
+	line-height: 30px;
+	list-style-type: none;
+	margin: 0px;
+}
+
+/************************* FORM DEFINITONS BEGIN *********************/
+div.form {
+	margin-top: 10px;
+}
+table.form {
+	width: 80%;
+	border-collapse: collapse;
+}
+
+table.form th {
+	color: #0066CC;
+	text-align: left;
+	font-weight: bold;
+	height: 30px;
+}
+
+table.form td {
+	font-size: 8pt;
+	line-height: 14pt;
+}
+
+table.form td.labels {
+	width: 25%;
+}
+
+table.form td.fields {
+	width: 75%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+table.form label.required {
+	font-weight: bold;
+	font-size: 8pt;
+	color: #34414A;
+}
+
+table.form label.optional {
+	font-weight: bold;
+	font-size: 8pt;
+	color: #34414A;
+}
+
+table.form input.text  {
+	font-family: Century Gothic, Avant Garde, Tahoma, Arial, Helvetica;
+	color: #34414A;
+	width: 100%;
+	border: solid 1px #34414A;
+}
+
+table.form input.formbutton  {
+	font-family: Century Gothic, Avant Garde, Tahoma, Arial, Helvetica;
+	color: #black;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+
+table.form select {
+	font-family: Century Gothic, Avant Garde, Tahoma, Arial, Helvetica;
+	color: #34414A;
+	width: 100%;
+	border: solid 1px #34414A;
+	font-size: 8pt;
+	height: 19px;
+}
+
+table.form textarea {
+	font-family: Century Gothic, Avant Garde, Tahoma, Arial, Helvetica;
+	color: #34414A;
+	font-size: 10pt;
+	border: solid 1px #34414A;
+	width: 100%;
+	height: 150px;
+}
+
+table.form input.password {
+	width: 30%;
+}
+
+table.form td {
+	height: 30px;
+}
+
+input.formbutton {
+	font-size: 8pt;
+}
+
+table.form_errordata {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+}
+
+table.form_errordata th {
+	color: white;
+	font-weight: bold;
+	background-color: #AC0917;
+	border: solid 1px #AC0917;
+	padding: 3px;
+}
+
+table.form_errordata td {
+	border: solid 1px #AC0917;
+}
+
+div.form_success {
+	min-height: 45px;
+	padding-left: 45px;
+	line-height: 45px;
+	background-image: url(../img/icon_ok.png);
+	background-repeat: no-repeat;
+	border: 1pt solid #56AE00;
+	background-color: #CCFF99;
+	color: black;
+}
+
+tr.separator_before, tr.separator_after {
+	display: none;
+	height: 0px;
+}
+
+/************************* FORM DEFINITONS END *********************/
+
+a.pdf {
+	display: block;
+	background-image: url("../../../simplyflex/modules/mediaadmin/img/icons/small/pdf.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 30px;
+}
+
+ul.icons {
+	margin: 0px;
+	padding: 0px;
+}
+
+li.icon {
+	background-image:url(/modules/mediaadmin/img/icons/small/file.png);
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding-left: 30px;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+
+div.code {
+	border: 1px solid rgb(102, 102, 102);
+	padding: 5px;
+	background-color: rgb(243, 243, 243);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
