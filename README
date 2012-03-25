@@ -1,0 +1,4 @@
+FOR LOCAL USE
+
+--copy config.local.php to application/config/
+
