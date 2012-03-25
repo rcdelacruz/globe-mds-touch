@@ -1,5 +1,6 @@
 FOR LOCAL USE
 
---EDIT config.local.php to your local settings
+--EDIT .config.local.php to your local settings
+--RENAME .config.local.php to config.local.php
 --COPY config.local.php to application/config/
 
