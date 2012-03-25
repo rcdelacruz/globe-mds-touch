@@ -1,4 +1,4 @@
 config.local.php
 .htaccess
-application/cache/**/*
-application/logs/**/*
+*/cache/
+*/logs/
